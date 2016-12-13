@@ -1,0 +1,9 @@
+version: '2'
+services:
+  angular:
+    build: angular
+    image: angular
+    hostname: ang
+    container_name: ang
+    command: bash -c 'while true; do sleep 10; done'
+
