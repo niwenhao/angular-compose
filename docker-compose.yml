@@ -5,5 +5,7 @@ services:
     image: niwenhao/angular
     hostname: ang
     container_name: ang
-#    command: bash -c 'while true; do sleep 10; done'
+    ports:
+      - "8022:22"
+      - "8080:80"
 
