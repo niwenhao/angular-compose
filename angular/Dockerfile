@@ -9,3 +9,6 @@ run apt-get install -y tmux
 env TERM=xterm-256color
 run su -c 'ng new template' - node
 run su -c 'cd template && ng build' - node
+run apt-get install -y openssh-server rsyslog man
+run yes | xargs -i echo password | passwd node
+cmd bash -c 'service rsyslog start; service ssh start; tail -f /var/log/auth.log'

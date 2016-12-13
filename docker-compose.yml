@@ -2,8 +2,8 @@ version: '2'
 services:
   angular:
     build: angular
-    image: angular
+    image: niwenhao/angular
     hostname: ang
     container_name: ang
-    command: bash -c 'while true; do sleep 10; done'
+#    command: bash -c 'while true; do sleep 10; done'
 
