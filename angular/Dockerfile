@@ -18,4 +18,6 @@ run su -c 'ng completion >> .bashrc' - node
 run npm install -g cordova ionic
 run su -c 'ionic start ionic-template' - node
 run su -c 'cd ionic-template && ionic build browser' - node
+run su -c 'git clone https://github.com/niwenhao/myhome.git' - node
+run su -c 'ls -d myhome/_* | while read f; do ln -s $f .${f#*_}; done' - node
 cmd bash -c 'service rsyslog start; service ssh start; service cron start; service apache2 start; tail -f /var/log/auth.log'
